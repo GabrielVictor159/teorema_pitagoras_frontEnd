@@ -1,0 +1,80 @@
+$name: "TeoremaPitagoras";
+@import "../components/styles/animationStyles.scss";
+@import "../components/styles/boxStyles.scss";
+@import "../components/styles/inputsStyle.scss";
+@import "../components/styles/buttonStyles.scss";
+.#{$name}_body{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #6320df;
+    .#{$name}_box{
+        width: 30vw;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        .#{$name}_box_result{
+            width: 80%;
+            height:30%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+       @include neomophirsm(#6920df,35px,35px,75px);
+       .inputbox{
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        input{
+            width: 40%;
+            height: 25px;
+            box-shadow: 12px 12px 0px rgba(39, 39, 39,0.6);
+            color: white;
+        }
+        input:focus{
+            animation: inputBorder 5s ease-out 0s infinite normal forwards;
+            color: rgb(255, 255, 255)
+        }
+        @keyframes inputBorder {
+            0%{
+                outline-color: aqua !important;
+                box-shadow: -3px -3px 15px rgb(0, 255, 255);
+            }
+            33%{
+                outline-color: rgb(0, 102, 255) !important;
+                box-shadow: -3px -3px 15px rgb(0, 102, 255);
+            }
+            66%{
+                outline-color: rgb(225, 0, 255) !important;
+                box-shadow: -3px -3px 15px rgb(225, 0, 255);
+            }
+            100%{
+                outline-color: aqua !important;
+                box-shadow: -3px -3px 15px rgb(0, 255, 255);
+            }
+        }
+        input::placeholder{
+            color: white
+        }
+       }
+       @include inputStyle2();
+      
+
+       @include buttonStyle_1(rgb(255, 0, 119), rgb(53, 53, 53));
+        
+
+        
+    }    
+}
+
