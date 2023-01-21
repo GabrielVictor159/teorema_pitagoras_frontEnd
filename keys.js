@@ -1,3 +1,4 @@
+// Link da api
 const Keys ={
     linkApi:'https://api-teorema-pitagoras.azurewebsites.net/'
 }

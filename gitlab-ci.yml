@@ -1,3 +1,4 @@
+# arquivo para configuração do deploy no azure
 image: node:16.5.0
 pages:
   stage:deploy

@@ -4,11 +4,14 @@ import Keys from "../../keys";
 import { ToastContainer, toast } from "react-toastify";
 const name = "TeoremaPitagoras"
 import "./TeoremaPitagoras.scss"
+
+// classe principal da aplicação
 export default function TeoremaPitagoras(props) {
+    // estados de input e resposta da requisição
     const [result, setResult] = useState("");
     const [valor1, setValor1] = useState(null);
     const [valor2, setValor2] = useState(null);
-
+    // método para requisição na api
     const calcular = ()=>{
         if(valor1 !== null || isNaN(valor1)===true){
             if(valor2 !== null || isNaN(valor2)===true){
@@ -28,6 +31,7 @@ export default function TeoremaPitagoras(props) {
 }
     return (
         <>
+        {/* estrutura jsx da pagina */}
         <div className={`${name}_body`}>
             <div className={`${name}_box`}>
                 <div className={`${name}_box_result`}>

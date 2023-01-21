@@ -6,7 +6,7 @@ import TeoremaPitagoras from './views/TeoremaPitagoras';
 
 function App() {
   const [count, setCount] = useState(0)
-
+// Configuração das rotas através do React-router
   return (
     <Routes>
       <Route path='/' element={<TeoremaPitagoras />}/>
